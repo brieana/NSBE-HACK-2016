@@ -1,19 +1,40 @@
-<!-- add code to the <head> of the page -->
 <head>
-  <title>Rate My Boss</title>
+  <title>ratemyboss</title>
 </head>
 
-<!-- add code to the <body> of the page -->
 <body>
-  <h1>Rate My Boss</h1>
-  {{> welcomePage}}
+  <h1>Welcome to Rate My Boss! </h1>
+
+  {{> hello}}
+
+  <ul>
+    <li><a href="#" class="home">About </a></li>
+    <li><a href="#" class="about">Evaluations</a></li>
+    <li><a href="#" class="contact">Feedback</a></li>
+  </ul>
+
+  {{> Template.dynamic template=template_name }}
+
 </body>
 
-<!-- define a template called welcomePage -->
-<template name="welcomePage">
-  <p>Welcome to my Rate My Boss.</p>
-  <p><b>About:</b></p>
-  <p> This is a site where workers will be able to share their experiences with particular bosses.</p>
-  <p> We envision this as a resource where workers will be able to give anonymous feedback about their boss.</p>
-  <p> This is also a place where you bosses or owners can learn about the interworkings of their organization to improve working conditions.</p>
+
+
+<template name="hello">
+  <button>Click Me</button>
+
+</template>
+
+
+<template name="About">
+    <p> HI</p>
+</template>
+
+
+<template name="Evaluations">
+    <p> my </p>
+</template>
+
+
+<template name="Feedback">
+    <p> friend </p>
 </template>
