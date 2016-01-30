@@ -3,7 +3,38 @@
 </head>
 
 <body>
-  <h1>Welcome to Rate My Boss! </h1>
+<h1> Welcome to WaterCooler!</h1>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+background-color:#4CAF50;
+}
+</style>
+</head>
 
 
   <ul>
@@ -19,20 +50,28 @@
 
 
 <template name="About">
-  <h1> Welcome to WaterCooler!</h1>
 
-    <p style="font-size:20px"> Do you feel uncomfortable in your work environment? Are there things you wish you could tell your boss but are afraid to for fear of losing your job?"</p>
-    <p style="font-size:16px"><strong> Then this is the right place for you!</strong> WaterCooler is an online resource that allows workers to anonomously give feedback<br> on their bosses or fill out evaluations and ensure that their job is protected</br></p>
-    <p style="font-size:14px">Many workers have to wake up in the morning and go to a job that they hate because of a bad boss. They are not able to say anything however because they understand <br> that their job could easily be replaced and fear getting fired. Our goal is to encourage low-paid workers</br> to actively to improve their work environment by letting their boss know what they're doing wrong without risking unemployment</p>  
+<h1> About WaterCooler</h1>
+    <p style="font-size:20px"> Do you feel uncomfortable in your work environment? Are there things you wish you could tell your boss but are afraid to for fear of losing your job?</p>
+    <p style="font-size:16px"><strong> Then this is the right place for you!</strong> WaterCooler is an online resource that allows workers to anonymously give feedback on their bosses or fill out evaluations while ensuring that their job is protected.</p>
+    <p style="font-size:14px">Many workers have to wake up in the morning and go to a job that they hate because of a bad boss. They are not able to say anything however because they understand that their job could easily be replaced and fear getting fired. Our goal is to encourage low-paid workers to actively work to improve their work environment by letting their boss know what they're doing wrong without risking unemployment./</p>
 
 </template>
 
 
 <template name="Evaluations">
-    <p> my </p>
+  <h1> Evaluation</h1>
+  <p> This is a place where you can fill out an anonymous evaluation of your boss so make sure to be honest with your opinions. Contructive criticism is what will help your work environment better. Access the evaluation <a href="http://www.vspn.org/library/misc/VSPN_M01532.htm">here</a></p>
 </template>
 
 
 <template name="Feedback">
-    <p> friend </p>
+  <h1> Feedback (Comments and Criticisms)</h1>
+    <p> If you don't want to fill out an evalutation but still want to tell your boss how you've been feeling, send them some anonymous feeback here!</p>
+    <ul>
+      <h2> Sample comments</h2>
+      <li> <strong> Anonymous:</strong> Dear Mark, When I suggest ideas at work I feel like you don't take me seriously and that makes me not want to speak up anymore</li>
+      <li><strong> Anonymous: </strong> Dear Phil, Sometimes I feel like you play favorites and it makes me uncomfortable knowing that progress is the company could be determined by who you like the most rather than who does the best job </li>
+    </ul>
+
 </template>
