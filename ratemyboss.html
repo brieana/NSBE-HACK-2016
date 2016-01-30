@@ -1,15 +1,14 @@
-<!-- add code to the <head> of the page -->
 <head>
-  <title>My website!</title>
+  <title>ratemyboss</title>
 </head>
 
-<!-- add code to the <body> of the page -->
 <body>
-  <h1>Hello!</h1>
-  {{> welcomePage}}
+  <h1>Welcome to Rate My Boss! </h1>
+
+  {{> hello}}
 </body>
 
-<!-- define a template called welcomePage -->
-<template name="welcomePage">
-  <p>Welcome to my website!</p>
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
 </template>
