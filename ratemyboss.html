@@ -12,3 +12,10 @@
   <button>Click Me</button>
   <p>You've pressed the button {{counter}} times.</p>
 </template>
+
+// Creates dropdown menu//
+<template name="dropdown">
+    {{> Template.dynamic template=templateName data=templateData}}
+</template>
+// if the ESC key is pressed or a mouse is clicked anywhere, close any open dropdowns
+//
