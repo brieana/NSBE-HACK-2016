@@ -1,0 +1,40 @@
+<head>
+  <title>ratemyboss</title>
+</head>
+
+<body>
+  <h1>Welcome to Rate My Boss! </h1>
+
+  {{> hello}}
+
+  <ul>
+    <li><a href="#" class="home">About </a></li>
+    <li><a href="#" class="about">Evaluations</a></li>
+    <li><a href="#" class="contact">Feedback</a></li>
+  </ul>
+
+  {{> Template.dynamic template=template_name }}
+
+</body>
+
+
+
+<template name="hello">
+  <button>Click Me</button>
+
+</template>
+
+
+<template name="About">
+    <p> HI</p>
+</template>
+
+
+<template name="Evaluations">
+    <p> my </p>
+</template>
+
+
+<template name="Feedback">
+    <p> friend </p>
+</template>
