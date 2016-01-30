@@ -14,12 +14,7 @@
   <p>Welcome to my website!</p>
 </template>
 
-// Creates dropdown menu//
-<template name="dropdown">
-    {{> Template.dynamic template=templateName data=templateData}}
-</template>
-// if the ESC key is pressed or a mouse is clicked anywhere, close any open dropdowns
-//
+
 $(document).keyup(function(evt) {
     if (evt.keyCode === 27) {
         Session.set('dropdown', null);
