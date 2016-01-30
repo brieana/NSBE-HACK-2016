@@ -55,17 +55,6 @@ Template.dropdown.events({
 
 });
 {{>dropdown name='example'}}
-<template name="dropdown_example">
-    {{#if open}}
-        <ul class="dropdown-menu x">
-            <li><a href="#">Option 1</a></li>
-            <li><a href="#">Option 2</a></li>
-            <li><a href="#">Option 3</a></li>
-        </ul>
-        <button class="invisible btn">Try this</button>
-    {{else}}
-        <button class="btn">Try this</button>
-    {{/if}}
-</template>
+
 
 
