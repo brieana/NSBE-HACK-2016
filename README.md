@@ -3,6 +3,6 @@ NSBE Hack UCSC 2016
 
 
 Files include:
-ratemyboss.html
-ratemyboss.css
-ratemyboss.js
+ratemyboss.html,
+ratemyboss.css,
+ratemyboss.js,
