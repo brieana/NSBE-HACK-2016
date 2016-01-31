@@ -6,3 +6,23 @@
     background: rgb(170, 187, 97); /* Fallback */
     background: rgba(170, 187, 97, 0.5);
 }
+
+/* unvisited link */
+a:link {
+    color: darkgrey;
+}
+
+/* visited link */
+a:visited {
+    color: grey;
+}
+
+/* mouse over link */
+a:hover {
+    color: darkgrey;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
