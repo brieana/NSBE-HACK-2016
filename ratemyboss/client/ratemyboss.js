@@ -21,9 +21,26 @@ if (Meteor.isClient){
     },
     "click .register": function() {
       Session.set("templateName", "register")
-    }
+    },
+
+  })
+
+Template.register.events({
+  "submit form": function(event){
+    event.preventDefault();
+    var email = $("[name=email]").val();
+    var password = $("[name=password]").val();
+    usersId.insert({
+      createdAt: new Date(),
+      email: email,
+      password: password
+    });
+    Session.set("templateName", "About");
+  }
+
+});
     // ..
-  });
+
 
 
 

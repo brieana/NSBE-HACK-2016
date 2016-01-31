@@ -12,3 +12,4 @@
       max: 1000
     }
   }));
+  usersId = new Mongo.Collection("usersId");
