@@ -103,7 +103,7 @@ a:hover:not(.active) {
 
 managers within a company. Many workers wake up in the morning and go to a job that they hate because of a bad boss. They are not able to speak their minds because they understand that their job could easily be replaced and fear getting fired.  </p>
     <h3 style="font-size:24px"> Our Goal </h3>
-      <p style="font-size:20px">We hope to encourage low-paid workers to actively work to improve their work environment by letting their boss know what they're doing wrong (or right) without risking unemployment.</p>
+      <p style="font-size:20px; text-align: left; font-family: Georgia">We hope to encourage low-paid workers to actively work to improve their work environment by letting their boss know what they're doing wrong (or right) without risking unemployment.</p>
     <h3 style="font-size:24px"> Here to help you! </h3>
       <p style="font-size: 20px; text-align:left; font-family: Georgia">  WaterCooler was inspired by the need for workers to be able to unite and connect
 
@@ -132,7 +132,7 @@ The goal here is to allow those submitting feedback to be honest and open, which
 <template name="Evaluations">
   <h2> Evaluation</h2>
   <p> This is a place where you can fill out an anonymous evaluation of your boss so make sure to be honest with your opinions. Contructive criticism is what will help your work environment better.  </p>
-
+  <span class="rateit"></span>
   {{> quickForm collection="survey" id="insertBookForm" type="insert"}}
 
 </template>
@@ -143,8 +143,8 @@ The goal here is to allow those submitting feedback to be honest and open, which
       <p style="font-size:24px"> If you don't want to fill out an evalutation but still want to tell your boss how you've been feeling, send them some anonymous feeback here!</p>
     <ol>
       <h3> Sample comments</h3>
-      <li> <strong> Anonymous:</strong> Dear Mark, When I suggest ideas at work I feel like you don't take me seriously and that makes me not want to speak up anymore</li>
-      <li><strong> Anonymous: </strong> Dear Phil, Sometimes I feel like you play favorites and it makes me uncomfortable knowing that progress is the company could be determined by who you like the most rather than who does the best job </li>
+    <li> <div class="rateit">  <strong> Anonymous:</strong> Dear Mark, When I suggest ideas at work I feel like you don't take me seriously and that makes me not want to speak up anymore </div> </li>
+    <li> <div class="rateit">  <strong> Anonymous: </strong> Dear Phil, Sometimes I feel like you play favorites and it makes me uncomfortable knowing that progress is the company could be determined by who you like the most rather than who does the best job </div> </li>
     </ol>
 
 </template>
