@@ -18,6 +18,9 @@ if (Meteor.isClient){
     },
     "click .contact": function() {
        Session.set("templateName", "Feedback");
+    },
+    "click .register": function() {
+      Session.set("templateName", "register")
     }
     // ..
   });
@@ -26,4 +29,3 @@ if (Meteor.isClient){
 
 
 }
-
