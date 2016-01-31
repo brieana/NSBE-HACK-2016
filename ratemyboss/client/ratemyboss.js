@@ -22,6 +22,9 @@ if (Meteor.isClient){
     template_isRegClicked: function(){
       return Session.get("isRegClicked");
     },
+    template_isResClicked: function(){
+      return Session.get("isResClicked");
+    }
     /*username: function(){
       return userId.find().fetch();
     }*/
@@ -35,6 +38,8 @@ if (Meteor.isClient){
       Session.set("isEvalClicked", false);
       Session.set("isFeedClicked", false);
       Session.set("isRegClicked", false);
+      Session.set("isResClicked", false);
+      
     },
     "click .about": function() {
        Session.set("templateName", "Evaluations");
@@ -42,6 +47,7 @@ if (Meteor.isClient){
        Session.set("isEvalClicked", true);
        Session.set("isFeedClicked", false);
        Session.set("isRegClicked", false);
+       Session.set("isResClicked", false);
 
     },
     "click .contact": function() {
@@ -50,6 +56,7 @@ if (Meteor.isClient){
        Session.set("isEvalClicked", false);
        Session.set("isFeedClicked", true);
        Session.set("isRegClicked", false);
+       Session.set("isResClicked", false);
 
     },
     "click .register": function() {
@@ -59,7 +66,16 @@ if (Meteor.isClient){
       Session.set("isEvalClicked", false);
       Session.set("isFeedClicked", false);
       Session.set("isRegClicked", true);
+      Session.set("isResClicked", false);
     },
+    "click .resources": function() {
+      Session.set("templateName", "Resources")
+      Session.set("isHomeClicked", false);
+      Session.set("isEvalClicked", false);
+      Session.set("isFeedClicked", false);
+      Session.set("isRegClicked", false);
+      Session.set("isResClicked", true);
+    }
 
   });
    }

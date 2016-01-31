@@ -74,6 +74,12 @@ a:hover:not(.active) {
     {{else}}
         <li style="font-size:20px"><a href="#" class="register">Registration</a></li>
     {{/if}}
+
+    {{#if template_isResClicked}}
+        <li style="font-size:20px"><a href="#" class="resources"><u>Resources</u></a></li>
+    {{else}}
+        <li style="font-size:20px"><a href="#" class="resources">Resources</a></li>
+    {{/if}}
   </ul>
 
   {{> Template.dynamic template=template_name }}
@@ -144,4 +150,11 @@ employees to create their own surveys that could potentially be made available t
     <p>Password: <input type="password" name="password"></p>
     <p><input type="submit" value="Register"></p>
   </form>
+</template>
+
+<template name="Resources">
+  <h2> Resources</h2>
+      <p style="font-size:24px"> Here we have resources to act upon what is found through feedback and evaluations</p>
+    <ol>
+    </ol>
 </template>
