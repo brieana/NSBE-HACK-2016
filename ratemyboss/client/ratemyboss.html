@@ -47,10 +47,33 @@ a:hover:not(.active) {
 
   <ul>
 
-    <li class="navigation"><a href="#" class="home">About </a></li>
-    <li style="font-size:20px"><a href="#" class="about">Boss Evaluations</a></li>
-    <li style="font-size:20px"><a href="#" class="contact">Company Feedback</a></li>
-    <li style="font-size:20px"><a href="#" class="register">Registration</a></li>
+
+
+    {{#if template_isHomeClicked}}
+         <li class="navigation"><a href="#" class="home"><u>About</u> </a></li>
+    {{else}}
+        <li class="navigation"><a href="#" class="home">About </a></li>
+    {{/if}}
+
+
+    {{#if template_isEvalClicked}}
+        <li style="font-size:20px"><a href="#" class="about"><u>Boss Evaluations</u></a></li>
+    {{else}}
+        <li style="font-size:20px"><a href="#" class="about">Boss Evaluations</a></li>
+    {{/if}}
+
+    {{#if template_isFeedClicked}}
+        <li style="font-size:20px"><a href="#" class="contact"><u>Company Feedback</u></a></li>
+    {{else}}
+        <li style="font-size:20px"><a href="#" class="contact">Company Feedback</a></li>
+    {{/if}}
+
+
+    {{#if template_isRegClicked}}
+        <li style="font-size:20px"><a href="#" class="register"><u>Registration</u></a></li>
+    {{else}}
+        <li style="font-size:20px"><a href="#" class="register">Registration</a></li>
+    {{/if}}
   </ul>
 
   {{> Template.dynamic template=template_name }}
@@ -116,7 +139,7 @@ these problems.</p></div>
   {{> quickForm collection="survey" id="insertBookForm" type="insert"}}
 </template>
 
-<template name="register">
+<template name="Registration">
   <h2>Register</h2>
   <form class="register">
     <p>Email: <input type="email"></p>
