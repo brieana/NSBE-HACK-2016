@@ -22,3 +22,4 @@ insecure                # Allow all DB writes from clients (for prototyping)
 accounts-password
 aldeed:autoform
 aldeed:collection2
+dandv:jquery-rateit
