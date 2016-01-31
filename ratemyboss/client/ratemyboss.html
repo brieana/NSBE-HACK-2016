@@ -1,0 +1,82 @@
+<head>
+  <title>ratemyboss</title>
+</head>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+a:hover:not(.active) {
+    background-color: #111;
+}
+ /*background-color:#4CAF50;*/
+}
+</style>
+</head>
+
+
+<body>
+<h1> Welcome to WaterCooler</h1>
+
+
+  <ul>
+    <li><a href="#" class="home">About </a></li>
+    <li><a href="#" class="about">Evaluations</a></li>
+    <li><a href="#" class="contact">Feedback</a></li>
+
+  </ul>
+
+  {{> Template.dynamic template=template_name }}
+
+</body>
+
+
+
+<template name="About">
+
+<h2> About WaterCooler</h2>
+    <p style="font-size:20px"> Do you feel uncomfortable in your work environment? Are there things you wish you could tell your boss but are afraid to for fear of losing your job?</p>
+    <p style="font-size:16px"><strong> Then this is the right place for you!</strong> WaterCooler is an online resource that allows workers to anonymously give feedback on their bosses or fill out evaluations while ensuring that their job is protected.</p>
+    <p style="font-size:14px">Many workers have to wake up in the morning and go to a job that they hate because of a bad boss. They are not able to say anything however because they understand that their job could easily be replaced and fear getting fired. Our goal is to encourage low-paid workers to actively work to improve their work environment by letting their boss know what they're doing wrong without risking unemployment./</p>
+
+</template>
+
+
+<template name="Evaluations">
+  <h2> Evaluation</h2>
+  <img src="https://image.freepik.com/free-photo/feedback-form--excellent_2866529.jpg" height="150" width="150" align="left">
+  <p> This is a place where you can fill out an anonymous evaluation of your boss so make sure to be honest with your opinions. Contructive criticism is what will help your work environment better. Access the evaluation <a href="http://www.vspn.org/library/misc/VSPN_M01532.htm">here</a></p>
+
+  {{> quickForm collection="survey" id="insertBookForm" type="insert"}}
+
+</template>
+
+
+<template name="Feedback">
+  <h2> Feedback (Comments and Criticisms)</h2>
+      <p style="font-size:24px"> If you don't want to fill out an evalutation but still want to tell your boss how you've been feeling, send them some anonymous feeback here!</p>
+    <ol>
+      <h3> Sample comments</h3>
+      <li> <strong> Anonymous:</strong> Dear Mark, When I suggest ideas at work I feel like you don't take me seriously and that makes me not want to speak up anymore</li>
+      <li><strong> Anonymous: </strong> Dear Phil, Sometimes I feel like you play favorites and it makes me uncomfortable knowing that progress is the company could be determined by who you like the most rather than who does the best job </li>
+    </ol>
+
+</template>
+
+<template name="insertSurvey">
+  {{> quickForm collection="survey" id="insertBookForm" type="insert"}}
+</template>
