@@ -36,7 +36,7 @@ a:hover:not(.active) {
 }
 
 
-}
+
 </style>
 </head>
 
@@ -134,7 +134,7 @@ The goal here is to allow those submitting feedback to be honest and open, which
   <p> This is a place where you can fill out an anonymous evaluation of your boss so make sure to be honest with your opinions. Contructive criticism is what will help your work environment better.  </p>
   <div class="rateit">
   </div>
-  {{autoform collection="evaluations" id="insert" type="insert"}}
+  <!---{{> autoform collection="evaluations" id="insert" type="insert"}}-->
 
 </template>
 
@@ -200,7 +200,7 @@ worker protections in certain temporary guest worker programs, and the prevailin
 <!--
 <template name="insertEvals">
   {{> quickForm collection="evaluations" id="insertEvals" type="insert"}}
-</template> 
+</template>
 -->
 
 <!-- Eval Form Resources-->
@@ -212,7 +212,7 @@ worker protections in certain temporary guest worker programs, and the prevailin
       {{> afQuickField name='question1'}}
       </p>
       <p>
-      {{> afQuickField name='answer' rows=6}}  
+      {{> afQuickField name='answer' rows=6}}
       </p>
       <p>
       {{> afQuickField name='question2'}}
