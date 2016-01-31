@@ -19,6 +19,9 @@ if (Meteor.isClient){
     template_isFeedClicked: function(){
       return Session.get("isFeedClicked");
     },
+    template_isRegClicked: function(){
+      return Session.get("isRegClicked");
+    }
 
   });
 
@@ -28,24 +31,33 @@ if (Meteor.isClient){
       Session.set("isHomeClicked", true);
       Session.set("isEvalClicked", false);
       Session.set("isFeedClicked", false);
+      Session.set("isRegClicked", false);
     },
     "click .about": function() {
        Session.set("templateName", "Evaluations");
        Session.set("isHomeClicked", false);
        Session.set("isEvalClicked", true);
        Session.set("isFeedClicked", false);
+       Session.set("isRegClicked", false);
+
     },
     "click .contact": function() {
        Session.set("templateName", "Feedback");
        Session.set("isHomeClicked", false);
        Session.set("isEvalClicked", false);
        Session.set("isFeedClicked", true);
+       Session.set("isRegClicked", false);
+
+    },
+    "click .register": function() {
+       Session.set("templateName", "Registration");
+       Session.set("isHomeClicked", false);
+       Session.set("isEvalClicked", false);
+       Session.set("isFeedClicked", false);
+       Session.set("isRegClicked", true);
 
     }
+
     // ..
   });
-
-
-
-
 }
