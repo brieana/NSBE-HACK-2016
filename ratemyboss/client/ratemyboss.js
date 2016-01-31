@@ -39,7 +39,7 @@ if (Meteor.isClient){
       Session.set("isFeedClicked", false);
       Session.set("isRegClicked", false);
       Session.set("isResClicked", false);
-      
+
     },
     "click .about": function() {
        Session.set("templateName", "Evaluations");
@@ -58,6 +58,16 @@ if (Meteor.isClient){
        Session.set("isRegClicked", false);
        Session.set("isResClicked", false);
 
+
+    },
+    "click .resources": function() {
+      Session.set("templateName", "Resources")
+      Session.set("isHomeClicked", false);
+      Session.set("isEvalClicked", false);
+      Session.set("isFeedClicked", false);
+      Session.set("isRegClicked", false);
+      Session.set("isResClicked", true);
+
     },
     "click .register": function() {
       Session.set("templateName", "register")
@@ -67,14 +77,6 @@ if (Meteor.isClient){
       Session.set("isFeedClicked", false);
       Session.set("isRegClicked", true);
       Session.set("isResClicked", false);
-    },
-    "click .resources": function() {
-      Session.set("templateName", "Resources")
-      Session.set("isHomeClicked", false);
-      Session.set("isEvalClicked", false);
-      Session.set("isFeedClicked", false);
-      Session.set("isRegClicked", false);
-      Session.set("isResClicked", true);
     }
 
   });
