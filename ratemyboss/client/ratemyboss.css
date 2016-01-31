@@ -9,12 +9,12 @@
 
 /* unvisited link */
 a:link {
-    color: darkgrey;
+    color: white;
 }
 
 /* visited link */
 a:visited {
-    color: grey;
+    color: white;
 }
 
 /* mouse over link */
@@ -26,3 +26,5 @@ a:hover {
 a:active {
     color: blue;
 }
+
+/* color of unordered list background */
