@@ -91,7 +91,8 @@ a:hover:not(.active) {
 <template name="About">
 
 
-<div style="margin-left: 220px">
+
+  <div style="margin-left: 220px">
   <h2 style="font-size:34px"> Welcome to WaterCooler!</h2>
       <p style="font-size:20px; text-align: left; font-family: Georgia"> Do you feel uncomfortable in your work environment? Are there things you wish you could tell your boss but are afraid to for fear of losing your job?<strong> Then this is the right place for you!</strong></p>
   <h3 style="font-size:24px"> What are we? </h3>
@@ -113,7 +114,7 @@ speed up the realization of certain prevelant issues at work and provide real so
 
 these problems. This unique platform of communication also  allows
 
-employees to create their own surveys that could potentially be made available to their coworkers in order to build a community with others that may be experiencing the same issues and ask more questions to see if a problem they are experiencing is more common amoung the community than they think</p>
+employees to create their own surveys that could potentially be made available to their coworkers in order to build a community with others that may be experiencing the same issues and ask more questions to see if a problem they are experiencing is more common amoung the community than they think.</p>
 
     <h3 style="font-size:24px"> Disclosure </h3>
       <p style="font-size:20px; text-align:left; font-family: Georgia"> Anything submitted on the feedback section of The WaterCooler is open to view by the general public.
@@ -122,38 +123,42 @@ Information submitted in the evaluations section of the The WaterCooler is priva
 
 Anonymity in The WaterCooler is to protect the workers, and prevent any retaliation that could come from public negative feedback.
 
-The goal here is to allow those submitting feedback to be honest and open, which will facilitate the right improvements in their workplaces.</p></div>
+The goal here is to allow those submitting feedback to be honest and open, which will facilitate the right improvements in their workplaces.</p>
+</div>
 
 </template>
 
 
 <template name="Evaluations">
+  <div style="margin-left: 220px">
   <h2> Evaluation</h2>
   <p style="font-size:20px"> This is a place where you can fill out an anonymous evaluation of your boss so make sure to be honest with your opinions. Contructive criticism is what will help your work environment better.  </p>
   <div class="rateit">
   </div>
   <!---{{> autoform collection="evaluations" id="insert" type="insert"}}-->
-
+</div>
 </template>
 
 
 <template name="Feedback">
-  <h2> Feedback (Comments and Criticisms)</h2>
-      <p style="font-size:20px"> If you don't want to fill out an evalutation but still want to tell your boss how you've been feeling, send them some anonymous feeback here!</p>
+  <div style="margin-left: 220px">
+  <h2 style="font-family: Georgia"> Feedback (Comments and Criticisms)</h2>
+      <p style="font-size:20px; font-family: Georgia"> If you don't want to fill out an evalutation but still want to tell your boss how you've been feeling, send them some anonymous feeback here!</p>
     <ol>
-      <h3 style="font-size:30px"> Sample comments</h3>
-      <li style="font-size:24px"> <strong> User 20189:</strong>The new policy that they implemented makes me feel like I have to compete with others in order to get my paycheck</li>
-      <li style="font-size:24px"><strong> Usee 30294: </strong> The fact that we get paid on Monday is so inconvenient. I wish we got paid on Friday so that we coud use the money over the weekend</li>
-    </ol>
+      <h3 style="font-size:30px; font-family: Georgia"> Sample comments</h3>
+      <li style="font-size:24px; font-family: Georgia"> <strong> User 20189:</strong>The new policy that they implemented makes me feel like I have to compete with others in order to get my paycheck</li>
+      <li style="font-size:24px; font-family: Georgia"><strong> User 30294: </strong> The fact that we get paid on Monday is so inconvenient. I wish we got paid on Friday so that we coud use the money over the weekend</li>
+    </ol><br><br>
 
-    <br><p style="font-size:24px"> <br>If you wish to create your own question for your fellow co-workers, please submit it below. We will review it and possibly post it soon</p>
+    <br><p style="font-size:24px; font-family: Georgia"> <br><strong>If you wish to create your own question for your fellow co-workers, please submit it below. We will review it and possibly post it soon.</strong></p>
 
      {{> quickForm collection="feedback" id="insertFeedback" type="insert"}}
-
+</div>
 </template>
 
 
 <template name="Resources">
+  <div style="margin-left: 220px">
   <h2> Resources</h2>
       <p style="font-size:20px"> Here we have resources to act upon what is found through feedback and evaluations</p>
 
@@ -179,17 +184,20 @@ worker protections in certain temporary guest worker programs, and the prevailin
       <p style="font-size:20px">The Workers Lab is a support center for organizing workers and betteringtheir working environments by raising awareness, giving financial support to organizations, and supporting efforts to help workers.
         <div><a href="http://www.theworkerslab.com" style="color: darkblue"> <img src="http://theworkerslab.com/wp-content/uploads/2014/05/228_workers-lab_logo-final-3.png" height="150" width="350"></a></div>
       </p>
-
+</div>
 </template>
 
 <template name="Registration">
+  <div style="margin-left: 220px">
   <h2>Register</h2>
   <form class="register">
     <p>Email: <input type="email"></p>
     <p>Password: <input type="password" name="password"></p>
     <p><input type="submit" value="Register"></p>
   </form>
+</div>
 </template>
+
 
 
 <!--
