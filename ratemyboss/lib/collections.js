@@ -9,12 +9,6 @@
        type: String,
        label: "Do they respect everyone one in the work space?\n",
        max: 500
-    },
-    answer: {
-      type: String,
-      label: "answer",
-      optional: true,
-      max: 1000
     }
   }));
 
