@@ -139,7 +139,7 @@ The goal here is to allow those submitting feedback to be honest and open, which
 
 <template name="Feedback">
   <h2> Feedback (Comments and Criticisms)</h2>
-      <p style="font-size:24px"> If you don't want to fill out an evalutation but still want to tell your boss how you've been feeling, send them some anonymous feeback here!</p>
+      <p style="font-size:20px"> If you don't want to fill out an evalutation but still want to tell your boss how you've been feeling, send them some anonymous feeback here!</p>
     <ol>
 
       <h3 style="font-size:30px"> Sample comments</h3>
@@ -147,6 +147,9 @@ The goal here is to allow those submitting feedback to be honest and open, which
       <li style="font-size:24px"><strong> Usee 30294: </strong> The fact that we get paid on Monday is so inconvenient. I wish we got paid on Friday so that we coud use the money over the weekend</li>
 
     </ol>
+
+    <br><p style="font-size:24px"> If you wish to create your own question for your fellow co-workers, please submit it below. We will review it and possibly post it soon</p>
+
      {{> quickForm collection="feedback" id="insertFeedback" type="insert"}}
 
 </template>
