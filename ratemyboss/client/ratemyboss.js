@@ -21,7 +21,10 @@ if (Meteor.isClient){
     },
     template_isRegClicked: function(){
       return Session.get("isRegClicked");
-    }
+    },
+    /*username: function(){
+      return userId.find().fetch();
+    }*/
 
   });
 
