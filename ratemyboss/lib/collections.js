@@ -13,3 +13,4 @@
     }
   }));
   usersId = new Mongo.Collection("usersId");
+  Photos = new Mongo.Collection("photos");

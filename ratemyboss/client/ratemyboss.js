@@ -54,8 +54,6 @@ if (Meteor.isClient){
     },
     "click .register": function() {
       Session.set("templateName", "register")
-<<<<<<< HEAD
-=======
       Session.set("templateName", "Registration");
       Session.set("isHomeClicked", false);
       Session.set("isEvalClicked", false);
@@ -63,14 +61,7 @@ if (Meteor.isClient){
       Session.set("isRegClicked", true);
     },
 
-  })
->>>>>>> b5b4f18fb0342647feed6b538645606c46636b4e
-
-    Session.set("templateName", "Registration");
-    Session.set("isHomeClicked", false);
-    Session.set("isEvalClicked", false);
-    Session.set("isFeedClicked", false);
-    Session.set("isRegClicked", true);
+  });
    }
 
   Template.register.events({
@@ -82,21 +73,6 @@ if (Meteor.isClient){
       createdAt: new Date(),
       email: email,
       password: password
-<<<<<<< HEAD
-
-    }
-  }
-    });
-
-
-});
-    // ..
-=======
-    });
-    Session.set("templateName", "About");
-  }
-
-});
-    // ..
-};
->>>>>>> b5b4f18fb0342647feed6b538645606c46636b4e
+      }
+    )},
+  });
