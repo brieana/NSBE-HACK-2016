@@ -50,6 +50,33 @@ if (Meteor.isClient){
 
     },
     "click .register": function() {
+<<<<<<< HEAD
+      Session.set("templateName", "register")
+    },
+
+  })
+
+Template.register.events({
+  "submit form": function(event){
+    event.preventDefault();
+    var email = $("[name=email]").val();
+    var password = $("[name=password]").val();
+    usersId.insert({
+      createdAt: new Date(),
+      email: email,
+      password: password
+    });
+    Session.set("templateName", "About");
+  }
+
+});
+    // ..
+
+
+
+
+
+=======
        Session.set("templateName", "Registration");
        Session.set("isHomeClicked", false);
        Session.set("isEvalClicked", false);
@@ -60,4 +87,5 @@ if (Meteor.isClient){
 
     // ..
   });
+>>>>>>> origin/master
 }
