@@ -18,18 +18,8 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 
 autopublish             # Publish all data to the clients (for prototyping)
 insecure                # Allow all DB writes from clients (for prototyping)
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 accounts-ui
 accounts-password
-=======
 aldeed:autoform
 aldeed:collection2
-<<<<<<< HEAD
-accounts-ui
-accounts-password
-=======
->>>>>>> origin/master
-=======
->>>>>>> parent of 0d8e5ce... Account Support
->>>>>>> 486ee26ca1dc7ec541a70e1f981adb4dbce948c1
