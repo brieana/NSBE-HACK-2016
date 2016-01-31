@@ -21,7 +21,10 @@ if (Meteor.isClient){
     },
     template_isRegClicked: function(){
       return Session.get("isRegClicked");
-    }
+    },
+    /*username: function(){
+      return userId.find().fetch();
+    }*/
 
   });
 
@@ -51,6 +54,17 @@ if (Meteor.isClient){
     },
     "click .register": function() {
       Session.set("templateName", "register")
+<<<<<<< HEAD
+=======
+      Session.set("templateName", "Registration");
+      Session.set("isHomeClicked", false);
+      Session.set("isEvalClicked", false);
+      Session.set("isFeedClicked", false);
+      Session.set("isRegClicked", true);
+    },
+
+  })
+>>>>>>> b5b4f18fb0342647feed6b538645606c46636b4e
 
     Session.set("templateName", "Registration");
     Session.set("isHomeClicked", false);
@@ -68,6 +82,7 @@ if (Meteor.isClient){
       createdAt: new Date(),
       email: email,
       password: password
+<<<<<<< HEAD
 
     }
   }
@@ -76,3 +91,12 @@ if (Meteor.isClient){
 
 });
     // ..
+=======
+    });
+    Session.set("templateName", "About");
+  }
+
+});
+    // ..
+};
+>>>>>>> b5b4f18fb0342647feed6b538645606c46636b4e
