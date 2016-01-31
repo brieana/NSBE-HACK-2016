@@ -53,8 +53,12 @@ if (Meteor.isClient){
 
     },
     "click .register": function() {
-<<<<<<< HEAD
       Session.set("templateName", "register")
+      Session.set("templateName", "Registration");
+      Session.set("isHomeClicked", false);
+      Session.set("isEvalClicked", false);
+      Session.set("isFeedClicked", false);
+      Session.set("isRegClicked", true);
     },
 
   })
@@ -74,21 +78,4 @@ Template.register.events({
 
 });
     // ..
-
-
-
-
-
-=======
-       Session.set("templateName", "Registration");
-       Session.set("isHomeClicked", false);
-       Session.set("isEvalClicked", false);
-       Session.set("isFeedClicked", false);
-       Session.set("isRegClicked", true);
-
-    }
-
-    // ..
-  });
->>>>>>> origin/master
-}
+};
