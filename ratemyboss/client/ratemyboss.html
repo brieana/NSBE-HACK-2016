@@ -134,7 +134,7 @@ The goal here is to allow those submitting feedback to be honest and open, which
   <p> This is a place where you can fill out an anonymous evaluation of your boss so make sure to be honest with your opinions. Contructive criticism is what will help your work environment better.  </p>
   <div class="rateit">
   </div>
-  {{> quickForm collection="survey" id="insertBookForm" type="insert"}}
+  {{autoform collection="evaluations" id="insert" type="insert"}}
 
 </template>
 
@@ -147,12 +147,10 @@ The goal here is to allow those submitting feedback to be honest and open, which
     <li><div class="rateit"><strong> Anonymous:</strong> Dear Mark, When I suggest ideas at work I feel like you don't take me seriously and that makes me not want to speak up anymore </div></li>
     <li><div class="rateit"><strong> Anonymous: </strong> Dear Phil, Sometimes I feel like you play favorites and it makes me uncomfortable knowing that progress is the company could be determined by who you like the most rather than who does the best job </div></li>
     </ol>
+     {{> quickForm collection="feedback" id="insertFeedback" type="insert"}}
 
 </template>
 
-<template name="insertSurvey">
-  {{> quickForm collection="survey" id="insertBookForm" type="insert"}}
-</template>
 
 <template name="Resources">
   <h2> Resources</h2>
@@ -180,4 +178,37 @@ their working environments by raising awareness, giving financial support to org
     <p>Password: <input type="password" name="password"></p>
     <p><input type="submit" value="Register"></p>
   </form>
+</template>
+
+
+<!--
+<template name="insertEvals">
+  {{> quickForm collection="evaluations" id="insertEvals" type="insert"}}
+</template> 
+-->
+
+<!-- Eval Form Resources-->
+<template name="insertEvals">
+  {{#autoform collection="evaluations" id="insert" type="insert"}}
+  <fieldset>
+    <legend> Add Evaluations </legend>
+      <p>
+      {{> afQuickField name='question1'}}
+      </p>
+      <p>
+      {{> afQuickField name='answer' rows=6}}  
+      </p>
+      <p>
+      {{> afQuickField name='question2'}}
+      </p>
+  </fieldset>
+  <div>
+  <button type="submit" class="btn btn-primary">Insert</button>
+  </div>
+  {{/autoform}}
+</template>
+
+<!-- Feedback Form Template-->
+<template name="insertFeedback">
+  {{> quickForm collection="feedback" id="insertFeedback" type="insert"}}
 </template>
