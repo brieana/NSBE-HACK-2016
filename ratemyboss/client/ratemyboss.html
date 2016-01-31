@@ -135,10 +135,11 @@ The goal here is to allow those submitting feedback to be honest and open, which
   <p style="font-size:20px"> This is a place where you can fill out an anonymous evaluation of your boss so make sure to be honest with your opinions. Contructive criticism is what will help your work environment better.  </p>
   <div class="rateit">
   </div>
-  <p></p>
-     {{> autoForm collection="evaluations" id="insertEvals" type="insert"}}
+
 </div>
-</template>
+    {{> quickForm collection="evaluations" id="insertEvals" type="insert"}}
+  </template>
+
 
 
 <template name="Feedback">
@@ -221,11 +222,10 @@ worker protections in certain temporary guest worker programs, and the prevailin
 
 
 
-<!--
+
 <template name="insertEvals">
   {{> quickForm collection="evaluations" id="insertEvals" type="insert"}}
 </template>
--->
 
 <!-- Eval Form Resources-->
 <template name="insertEvals">
