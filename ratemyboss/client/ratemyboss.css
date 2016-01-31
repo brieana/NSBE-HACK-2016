@@ -2,11 +2,6 @@
   font-size: 20px;
 }
 
-.container {
-    background: rgb(170, 187, 97); /* Fallback */
-    background: rgba(170, 187, 97, 0.5);
-}
-
 /* unvisited link */
 a:link {
     color: white;
